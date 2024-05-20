@@ -1,0 +1,282 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  height: 60px;
+
+}
+
+.center-text {
+  display: flex;
+  gap: 40px;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  align-content: center;
+  gap: 50px;
+}
+
+.phone-info {
+  text-align: center;
+}
+
+.phone-info p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cta-button {
+  margin-top: 5px;
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  border: 1px solid #b3b3b3;
+}
+
+.cta-button:hover {
+  background-color: #cecfd1;
+}
+
+.garr {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/*  */
+
+.background {
+  width: 100%;
+  height: 600px;
+  background-image: url('/img/image.png');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-color: rgb(43 23 104 / 50%);
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-hero {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 100px;
+  margin-top: -50px;
+  width: 60%;
+}
+
+.prg-hero {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 100px;
+  width: 60%;
+  margin-top: -40px;
+}
+
+.btn-hero {
+  margin-left: 100px;
+  padding-top: 10px;
+}
+
+.btn1 {
+  width: 170px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(248, 102, 36, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn2 {
+  width: 170px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(248, 102, 36, 1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*  */
+.section-onen {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.prg-onen {
+  font-family: 'Stem';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 10.4px;
+  text-align: center;
+  color: rgba(234, 53, 70, 1);
+}
+
+.text-one {
+  font-family: 'Stem';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.prg1 {
+  font-family: 'Stem';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.2px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.gallery {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-box {
+  width: 330px;
+  height: 360px;
+  border-radius: 16px;
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+
+.image-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 29, 29, 0.5);
+  /* Цвет затемнения */
+  pointer-events: none;
+  /* Чтобы позволить взаимодействие с изображением */
+}
+
+
+.foto-foto {
+  width: 330px;
+  height: 360px;
+  border-radius: 16px;
+}
+
+.box-box {
+  position: absolute;
+  margin-top: -130px;
+  padding: 10px 20px;
+  width: 87%;
+}
+
+.text-foto {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 9.4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.prg-foto {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.foto-thu {
+  width: 100%;
+  height: 600px;
+  background-image: url('/img/fototoi.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.pever {
+  margin: auto;
+  margin-top: 30px;
+}
+
+.prg-thu {
+  font-family: 'Stem';
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 6.4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.text-tru {
+  font-family: 'Stem';
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
