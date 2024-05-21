@@ -21,7 +21,7 @@ body {
 
 .logo-text {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 32px;
 }
 
@@ -35,6 +35,9 @@ body {
 
 .phone-info {
   text-align: center;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
 }
 
 .phone-info p {
@@ -45,7 +48,10 @@ body {
 .phone-number {
   font-weight: bold;
   font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
+
 
 .cta-button {
   margin-top: 5px;
@@ -78,7 +84,7 @@ body {
 .background {
   width: 100%;
   height: 600px;
-  background-image: url('/img/image.png');
+  background-image: url('../img/image.png');
   background-size: cover;
   background-position: center;
 
@@ -133,6 +139,7 @@ body {
   line-height: 24px;
   text-align: center;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 .btn2 {
@@ -147,6 +154,16 @@ body {
   line-height: 24px;
   text-align: center;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+
+.btn2:hover {
+  transform: scale(1.1);
 }
 
 /*  */
@@ -193,7 +210,7 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 
 .image-box {
@@ -203,6 +220,11 @@ body {
   border: none;
   position: relative;
   display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover {
+  transform: scale(1.1);
 }
 
 .image-box::before {
@@ -251,10 +273,23 @@ body {
 
 .foto-thu {
   width: 100%;
-  height: 600px;
-  background-image: url('/img/fototoi.jpg');
+  height: 700px;
+  background-image: url('../img/fototoi.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.overlayq {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgb(43 23 104 / 50%);
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 
@@ -279,4 +314,254 @@ body {
   line-height: 8px;
   text-align: center;
   color: rgba(255, 255, 255, 1);
+}
+
+
+
+.pon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icon-pon {
+  width: calc(33.333% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto-pon {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.text-pon1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 6.4px;
+  text-align: center;
+  font-family: 'Stem';
+  color: rgb(255, 255, 255)
+}
+
+.text-pon {
+  margin-top: -20px;
+}
+
+.prg-pon {
+  font-family: 'Stem';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 4px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/*  */
+
+.section-tree {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-tree {
+  font-family: 'Stem';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.prg-tree {
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+  width: 60%;
+  margin: auto;
+}
+
+.form-container {
+  background-color: white;
+  padding: 25px 10px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container input[type="tel"] {
+  width: 300px;
+  height: 25px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-tree {
+  background-color: rgba(248, 102, 36, 1);
+  color: white;
+  border: none;
+  width: 170px;
+  height: 45px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-tree:hover {
+  background-color: rgb(193, 82, 30);
+}
+
+.zanav {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  width: 42%;
+  margin-top: -35px;
+  margin: auto;
+}
+
+
+.highlight {
+  color: rgba(248, 102, 36, 1);
+  /* Змінити колір на бажаний */
+}
+
+/*  */
+
+
+.sect-for {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: rgba(247, 248, 250, 1);
+}
+
+.contan {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titlei {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 69px;
+}
+
+.subtitlei {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+
+}
+
+.review1 {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 320px;
+  text-align: center;
+}
+
+.review1 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review1 p {
+  font-family: 'Stem';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.2px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.review1 .name {
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.review1 .role {
+  font-family: 'Stem';
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*  */
+.review2 {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 320px;
+  text-align: center;
+}
+
+.review2 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review2 p {
+  font-family: 'Stem';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.2px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.review2 .name {
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.review2 .role {
+  font-family: 'Stem';
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }
