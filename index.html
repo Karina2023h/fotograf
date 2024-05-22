@@ -36,7 +36,7 @@
           <h1 class="text-hero">Фотограф у вашому місті</h1>
           <p class="prg-hero">Фотографії, які допомагають вашому бізнесу. Зверніться до мене прямо зараз</p>
           <div class="btn-hero">
-            <button class="btn1">Про фотографа</button>
+            <button class="btn1" id="scrollButtonsa">Про фотографа</button>
             <button class="btn2" id="scrollButton">Вартість послуг</button>
           </div>
         </div>
@@ -160,7 +160,7 @@
     </p>
   </section>
   <section class="sect-for">
-    <div class="contan">
+    <div id="reviews" class="contan">
       <div class="titlei">Відгуки</div>
       <div class="subtitlei">Справжні відгуки моїх клієнтів</div>
       <div class="reviews">
@@ -187,12 +187,66 @@
     </div>
 </body>
 </section>
+<section class="photographer-section" id="section6">
+  <div class="contenta">
+    <h2 class="text-pho">Про фотографа</h2>
+    <h1 class="text1-pho">Більше 20 років працюю фотографом</h1>
+    <p class="prg-pho">Це ваш голосовий клон AI. Ми фіксуємо ваші унікальні мовні зразки, вимову та емоційний діапазон,
+      щоб створити
+      реалістичний голос-репліку.
+    </p>
+    <p class="prg-pho">Завантажте записи або виконайте один із наших сценаріїв, щоб створити свій власний голос.</p>
+    <button class="ctars-button">Записатися на зйомку</button>
+  </div>
+  <div class="images">
+    <img src="./img/len.png" alt="Фотограф с камерой" class="image-one">
+    <img src="./img/len1.png" alt="Силуэт фотографа" class="image-two">
+  </div>
+</section>
+<section class="xoxp">
+  <div class="slider">
+    <div class="slides">
+      <img src="./img/do.png" alt="Слайд 1">
+      <img src="./img/image.png" alt="Слайд 2">
+      <img src="./img/do.png" alt="Слайд 3">
+    </div>
+    <div class="slider-buttons">
+      <button class="slider-button" id="prev">❮</button>
+      <button class="slider-button" id="next">❯</button>
+    </div>
+  </div>
+</section>
+<section class="secr-fot">
+  <div class="formas-container">
+    <h2>Замов зйомку</h2>
+    <p class="fers">Замов свою унікальну зйомку прямо зараз. Просто заповніть форму і я зв'яжусь з вами</p>
+    <form>
+      <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+      <input type="email" id="email" name="email" required placeholder="Електрона пошта">
+      <input type="tell" id="phone" name="phone" required placeholder="Номер телефону">
+
+      <label class="forgt" for="shooting-type">Виберіть тип зйомки:</label>
+      <select id="shooting-type" name="shooting-type" required>
+        <option class="optr" value="wedding">Свадібна фотосесія</option>
+        <option class="optr" value="family">Сімейна фотосесія</option>
+        <option class="optr" value="children">Дитяча фотосесія</option>
+      </select>
+
+      <button type="submit">Залишити заявку</button>
+    </form>
+    <p class="zanav">Залишаючи заявку, ви погоджуєтесь на <span class="highlight">обробку персональних даних</span> та
+      з
+      <span class="highlight"> умовами бронювання рахунку</span>
+    </p>
+  </div>
+</section>
 <script>
   function makeCall() {
     window.location.href = 'tel:+380963458760';
   }
 </script>
 <script src="w1.js"></script>
+<script src="w2.js"></script>
 </body>
 
 </html>

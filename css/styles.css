@@ -391,7 +391,9 @@ body {
 
 .form-container {
   background-color: white;
-  padding: 25px 10px;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
   text-align: center;
   display: flex;
   margin: auto;
@@ -406,7 +408,7 @@ body {
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .btn-tree {
@@ -425,13 +427,12 @@ body {
 }
 
 .zanav {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
   width: 42%;
-  margin-top: -35px;
   margin: auto;
 }
 
@@ -564,4 +565,249 @@ body {
   line-height: 18px;
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
+}
+
+/*  */
+.photographer-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: white;
+}
+
+.contenta {
+  max-width: 500px;
+}
+
+.text-pho {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: left;
+  color: rgba(234, 53, 70, 1);
+}
+
+.text1-pho {
+  font-family: 'Gilroy';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+
+.prg-pho {
+  font-family: 'Gilroy';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin: 10px 0;
+
+}
+
+.ctars-button {
+  background-color: rgba(248, 102, 36, 1);
+  color: white;
+  border: none;
+  padding: 15px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 40px;
+}
+
+.ctars-button:hover {
+  background-color: #d94a20;
+}
+
+.images {
+  position: relative;
+  width: 290px;
+  height: 525px;
+}
+
+.image-one {
+  width: 255px;
+  height: 255px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.image-two {
+  width: 350px;
+  height: 342px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.image-one {
+  top: 0;
+  left: 50px;
+  z-index: 2;
+}
+
+.image-two {
+  bottom: 0;
+  right: 55px;
+  z-index: 1;
+}
+
+
+/*  */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(8, 8, 8);
+  padding: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-left: 120px;
+}
+
+
+/*  */
+
+.secr-fot {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.formas-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.formas-container h2 {
+  text-align: center;
+  font-family: 'Stem';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.fers {
+  text-align: center;
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 1);
+  margin-top: -28px;
+  width: 45%;
+}
+
+.formas-container form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: -10px;
+  padding-bottom: 15px;
+}
+
+.formas-container form label {
+  margin-top: 10px;
+}
+
+.formas-container form input,
+.formas-container form select,
+.formas-container form button {
+
+  font-family: 'Stem';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+
+
+  padding: 9px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(124, 123, 123);
+}
+
+.formas-container form button {
+  background-color: rgba(248, 102, 36, 1);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+  margin-top: 25px;
+}
+
+.formas-container form button:hover {
+  background-color: rgb(190, 77, 24);
+}
+
+.formas-container form select {
+  font-family: 'Stem';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+}
+
+.optr {
+  font-family: 'Stem';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(51, 51, 51, 1);
+}
+
+.forgt {
+  font-family: 'Stem';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
