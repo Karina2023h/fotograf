@@ -706,6 +706,8 @@ body {
 .secr-fot {
   padding-top: 20px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .formas-container {
@@ -810,4 +812,114 @@ body {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+}
+
+.mapsar {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f4f4f4;
+}
+
+.map {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact-info {
+  background-color: #6a1b9a;
+  color: white;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 22%;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.contact-info p {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  display: none;
+}
+
+.message.error {
+  color: red;
+}
+
+.message {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.message.hidden {
+  opacity: 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 54px;
+  height: 54px;
+}
+
+.footer-nav {
+  margin-top: 40px;
+}
+
+.footer-nav a {
+  color: rgb(4, 4, 4);
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
 }

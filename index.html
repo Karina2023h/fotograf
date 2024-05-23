@@ -8,7 +8,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="./img/favicon.png" type="image/x-icon">
 
-
+  <style>
+    /* Додаткові стилі для плавної прокрутки */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -95,7 +100,7 @@
   <section class="section-thou">
     <div class="foto-thu">
       <div class="overlayq">
-        <div class="pever">
+        <div id="iconpop" class="pever">
           <p class="prg-thu">Чому рекомендують мене</p>
           <h2 class="text-tru">Переваги</h2>
           <div class="pon">
@@ -155,9 +160,11 @@
       <input type="tel" id="phone-number" placeholder="Введіть номер телефону" required>
       <button class="btn-tree" id="submit-button">Залишити заявку</button>
     </div>
+
     <p class="zanav">Залишаючи заявку, ви погоджуєтесь на <span class="highlight">обробку персональних даних</span> та з
       <span class="highlight"> умовами бронювання рахунку</span>
     </p>
+    <div id="message" class="message"></div>
   </section>
   <section class="sect-for">
     <div id="reviews" class="contan">
@@ -239,7 +246,34 @@
       <span class="highlight"> умовами бронювання рахунку</span>
     </p>
   </div>
+  <div class="mapsar" id="contacts">
+    <div class="contact-section">
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d10161.641813953183!2d30.518185762633284!3d50.45208099540655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x40d4ce51cc422171%3A0x3a071b3501419f36!2z0LLRg9C70LjRhtGPINCl0YDQtdGJ0LDRgtC40LosIDEwLCDQmtC40ZfQsiwg0KPQutGA0LDRl9C90LA!3m2!1d50.4517731!2d30.5259118!4m0!5e0!3m2!1suk!2sde!4v1713455036378!5m2!1suk!2sde"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-info">
+      <h2>Контакти</h2>
+      <p>+38 096 345 8760</p>
+      <p><a href="mailto:info@constructor.ru">fotograf2090@gmail.com</a></p>
+      <p>вулиця Хрещатик, 10, Київ, Україна, 02000</p>
+    </div>
+  </div>
 </section>
+<footer class="footer">
+  <div class="social-links">
+    <a href="#"><img src="./img/iconcos/g1.png" alt="Facebook"></a>
+    <a href="#"><img src="./img/iconcos/g2.png" alt="Instagram"></a>
+    <a href="#"><img src="./img/iconcos/g3.png" alt="Twitter"></a>
+    <a href="#"><img src="./img/iconcos/g4.png" alt="VK"></a>
+  </div>
+  <nav class="footer-nav">
+    <a href="#section6">Про фотографа</a>
+    <a href="#section1">Послуги</a>
+    <a href="#iconpop">Переваги</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+</footer>
 <script>
   function makeCall() {
     window.location.href = 'tel:+380963458760';
@@ -247,6 +281,7 @@
 </script>
 <script src="w1.js"></script>
 <script src="w2.js"></script>
+<script src="scrp.js"></script>
 </body>
 
 </html>
