@@ -349,9 +349,9 @@ body {
 
 .text-one {
   font-family: 'Stem';
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 22px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
@@ -418,7 +418,7 @@ body {
 
 .image-box {
   width: 260px;
-  height: 280px;
+  height: 290px;
   border-radius: 16px;
   border: none;
   position: relative;
@@ -459,7 +459,7 @@ body {
 
 .foto-foto {
   width: 260px;
-  height: 280px;
+  height: 290px;
   border-radius: 16px;
 }
 
@@ -639,7 +639,7 @@ body {
 .icon-pon {
   width: calc(33.333% - 20px);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -723,9 +723,9 @@ body {
 
 .text-tree {
   font-family: 'Stem';
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 700;
-  line-height: 10px;
+  line-height: 22px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
 }
@@ -745,7 +745,7 @@ body {
   font-family: 'Stem';
   font-size: 12px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
   color: rgba(51, 51, 51, 1);
   margin: auto;
@@ -872,9 +872,17 @@ body {
 
 
 .sect-for {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(247, 248, 250, 1);
+}
+
+@media only screen and (min-width: 485px) {
+  .sect-for {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: rgba(247, 248, 250, 1);
+  }
 }
 
 .contan {
@@ -883,15 +891,31 @@ body {
 }
 
 .titlei {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 69px;
+  line-height: 50px;
+}
+
+@media only screen and (min-width: 485px) {
+  .titlei {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 69px;
+  }
 }
 
 .subtitlei {
-  font-size: 18px;
+  font-size: 14px;
   color: #666;
   margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 485px) {
+  .subtitlei {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+  }
 }
 
 .reviews {
