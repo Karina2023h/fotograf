@@ -11,3 +11,11 @@ document
       behavior: "smooth",
     });
   });
+
+document
+  .getElementById("scrollButtongap")
+  .addEventListener("click", function () {
+    document.getElementById("section2").scrollIntoView({
+      behavior: "smooth",
+    });
+  });

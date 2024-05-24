@@ -31,7 +31,6 @@
         <a href="tel:+380963458760" class="phone-number">+38 096 345 8760</a>
       </div>
       <button class="cta-button" onclick="makeCall()">Замовити</button>
-
     </div>
   </header>
   <section class="hero">
@@ -63,35 +62,35 @@
       <div class="image-box">
         <img class="foto-foto" src="img/foto2.jpg" alt="Картинка 2">
         <div class="box-box">
-          <h3 class="text-foto">Весільна фотосесія</h3>
+          <h3 class="text-foto">Фотосесія вагітних</h3>
           <p class="prg-foto">від 1500 UAH</p>
         </div>
       </div>
       <div class="image-box">
         <img class="foto-foto" src="img/foto3.jpg" alt="Картинка 3">
         <div class="box-box">
-          <h3 class="text-foto">Весільна фотосесія</h3>
+          <h3 class="text-foto">Дитяча фотосесія</h3>
           <p class="prg-foto">від 1500 UAH</p>
         </div>
       </div>
       <div class="image-box">
         <img class="foto-foto" src="img/foto0.jpg" alt="Картинка 4">
         <div class="box-box">
-          <h3 class="text-foto">Весільна фотосесія</h3>
+          <h3 class="text-foto">Сімейна фотосесія</h3>
           <p class="prg-foto">від 1500 UAH</p>
         </div>
       </div>
       <div class="image-box">
         <img class="foto-foto" src="img/foto4.jpg" alt="Картинка 5">
         <div class="box-box">
-          <h3 class="text-foto">Весільна фотосесія</h3>
+          <h3 class="text-foto">Фото їжі</h3>
           <p class="prg-foto">від 1500 UAH</p>
         </div>
       </div>
       <div class="image-box">
         <img class="foto-foto" src="img/foto5.jpg" alt="Картинка 6">
         <div class="box-box">
-          <h3 class="text-foto">Весільна фотосесія</h3>
+          <h3 class="text-foto">Естрадна фотосесія</h3>
           <p class="prg-foto">від 1500 UAH</p>
         </div>
       </div>
@@ -203,7 +202,7 @@
       реалістичний голос-репліку.
     </p>
     <p class="prg-pho">Завантажте записи або виконайте один із наших сценаріїв, щоб створити свій власний голос.</p>
-    <button class="ctars-button">Записатися на зйомку</button>
+    <button class="ctars-button" id="scrollButtongap">Записатися на зйомку</button>
   </div>
   <div class="images">
     <img src="./img/len.png" alt="Фотограф с камерой" class="image-one">
@@ -224,13 +223,13 @@
   </div>
 </section>
 <section class="secr-fot">
-  <div class="formas-container">
+  <div class="formas-container" id="section2">
     <h2>Замов зйомку</h2>
     <p class="fers">Замов свою унікальну зйомку прямо зараз. Просто заповніть форму і я зв'яжусь з вами</p>
-    <form>
+    <form id="contact-form">
       <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
       <input type="email" id="email" name="email" required placeholder="Електрона пошта">
-      <input type="tell" id="phone" name="phone" required placeholder="Номер телефону">
+      <input type="tel" id="phone" name="phone" required placeholder="Номер телефону">
 
       <label class="forgt" for="shooting-type">Виберіть тип зйомки:</label>
       <select id="shooting-type" name="shooting-type" required>
@@ -245,6 +244,8 @@
       з
       <span class="highlight"> умовами бронювання рахунку</span>
     </p>
+    <div id="messages" class="message"></div>
+    <div id="status-message" class="message"></div>
   </div>
   <div class="mapsar" id="contacts">
     <div class="contact-section">
@@ -279,9 +280,11 @@
     window.location.href = 'tel:+380963458760';
   }
 </script>
+<script src="tell.js"></script>
 <script src="w1.js"></script>
 <script src="w2.js"></script>
 <script src="scrp.js"></script>
+
 </body>
 
 </html>
